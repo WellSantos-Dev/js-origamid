@@ -1,102 +1,118 @@
-// Crie uma função para verificar se um valor é Truthy
-function isTrue(index) {
-  if(!!index === true) {
-    console.log("It's true!")
-  } else if (!!index === false) {
-    console.log("It's false!")
-  }
+// function soma(a, b, c) {
+//   return a + b + c;
+// }
+
+// console.log(soma(7, 7, 9, 5)) // desconsidera os parametros adicionais
+
+
+
+function saudacao(index) {
+  console.log(`Bem vindo ${index}`)
 }
 
-a = '';
-
-isTrue(a)
+saudacao("Wellington")
 
 
 
+// // Crie uma função para verificar se um valor é Truthy
+// function isTrue(index) {
+//   if(!!index === true) {
+//     console.log("It's true!")
+//   } else if (!!index === false) {
+//     console.log("It's false!")
+//   }
+// }
 
-// Crie uma função matemática que retorne o perímetro de um quadrado
-// lembrando: perímetro é a soma dos quatro lados do quadrado
+// a = '';
 
-function perimetro(lado) {
-  area = lado * 4;
-  return area;
-}
-
-console.log(`Perimetro do quadrado: ${perimetro(4)}`);
-
-
-
-
-// Crie uma função que retorne o seu nome completo
-// ela deve possuir os parâmetros: nome e sobrenome
-function nomeCompleto(name, surname) {
-  if (name == "Wellington") {
-    let adm = "Você é administrador do sistema"
-    return name + ' ' + surname + ': ' + adm;
-  } else {
-    notAdm = "Você é usuário comum do sistema";
-    return name + '' + surname + ': ' + notAdm;
-    }
-}
-
-console.log(nomeCompleto("Wellington", "Santos"))
-
-// Aproveitando, tive uma ideia de criar um sistema de login :D
-
-function login(senha) {
-  if (senha === 123) {
-    return console.log("Situação: Logado");
-  } else {
-    return console.log("Senha incorreta");
-  }
-}
-
-login(123);
+// isTrue(a)
 
 
 
 
-// Crie uma função que verifica se um número é par
+// // Crie uma função matemática que retorne o perímetro de um quadrado
+// // lembrando: perímetro é a soma dos quatro lados do quadrado
 
+// function perimetro(lado) {
+//   area = lado * 4;
+//   return area;
+// }
 
-// Crie uma função que retorne o tipo de
-// dado do argumento passado nela (typeof)
-function tipoDeDado(tipo) {
-  if (typeof tipo === "number") {
-    console.log("Its a number");
-  } else if (typeof tipo === "string") {
-    console.log("Its a string");
-  } 
-}
-
-tipoDeDado("a");
+// console.log(`Perimetro do quadrado: ${perimetro(4)}`);
 
 
 
 
-// addEventListener é uma função nativa do JavaScript
-// o primeiro parâmetro é o evento que ocorre e o segundo o Callback
-// utilize essa função para mostrar no console o seu nome completo
-// quando o evento 'scroll' ocorrer.
-// addEventListener('scroll', function() {
-//   console.log("Wellington Santos");
-// });
+// // Crie uma função que retorne o seu nome completo
+// // ela deve possuir os parâmetros: nome e sobrenome
+// function nomeCompleto(name, surname) {
+//   if (name == "Wellington") {
+//     let adm = "Você é administrador do sistema"
+//     return name + ' ' + surname + ': ' + adm;
+//   } else {
+//     notAdm = "Você é usuário comum do sistema";
+//     return name + '' + surname + ': ' + notAdm;
+//     }
+// }
+
+// console.log(nomeCompleto("Wellington", "Santos"))
+
+// // Aproveitando, tive uma ideia de criar um sistema de login :D
+
+// function login(senha) {
+//   if (senha === 123) {
+//     return console.log("Situação: Logado");
+//   } else {
+//     return console.log("Senha incorreta");
+//   }
+// }
+
+// login(123);
 
 
 
-//Corrija o erro abaixo
-function precisoVisitar(paisesVisitados) {
-  var totalPaises = 193;
-  return `Ainda faltam ${totalPaises - paisesVisitados} países para visitar`;
-}
 
-function jaVisitei(paisesVisitados) {
-  var totalPaises = 193;
-  return `Já visitei ${paisesVisitados} do total de ${totalPaises} países`;
-}
+// // Crie uma função que verifica se um número é par
 
-console.log(precisoVisitar(20));
-console.log(jaVisitei(20));
+
+// // Crie uma função que retorne o tipo de
+// // dado do argumento passado nela (typeof)
+// function tipoDeDado(tipo) {
+//   if (typeof tipo === "number") {
+//     console.log("Its a number");
+//   } else if (typeof tipo === "string") {
+//     console.log("Its a string");
+//   } 
+// }
+
+// tipoDeDado("a");
+
+
+
+
+// // addEventListener é uma função nativa do JavaScript
+// // o primeiro parâmetro é o evento que ocorre e o segundo o Callback
+// // utilize essa função para mostrar no console o seu nome completo
+// // quando o evento 'scroll' ocorrer.
+// // addEventListener('scroll', function() {
+// //   console.log("Wellington Santos");
+// // });
+
+
+
+// //Corrija o erro abaixo
+// function precisoVisitar(paisesVisitados) {
+//   var totalPaises = 193;
+//   return `Ainda faltam ${totalPaises - paisesVisitados} países para visitar`;
+// }
+
+// function jaVisitei(paisesVisitados) {
+//   var totalPaises = 193;
+//   return `Já visitei ${paisesVisitados} do total de ${totalPaises} países`;
+// }
+
+// console.log(precisoVisitar(20));
+// console.log(jaVisitei(20));
 
 // O problema era o escopo de uma variável (Estava declarada em uma função e quando fui chamar em outra ocorreu o erro 'not defined'). O outro erro é que quando tem return precisa dar console.log...
 
