@@ -1,25 +1,25 @@
-// var person = {
-//   name : 'Wellington',
-//   surname : 'Matheus',
-//   age : 19,
-//   hasGraduation : true
-// }
+var person = {
+  name : 'Wellington',
+  surname : 'Matheus',
+  age : 19,
+  hasGraduation : true
+}
 
-// console.log(person.name, person.surname)
+console.log(person.name, person.surname)
 
 
 
-// var quadrado = {
-//   lados : 4,
-//   area: function(lado) {
-//     return lado * lado;
-//   },
-//   perimetro : function(lado) {
-//     return lado * this.lados;
-//   }
-// }
+var quadrado = {
+  lados : 4,
+  area: function(lado) {
+    return lado * lado;
+  },
+  perimetro : function(lado) {
+    return lado * this.lados;
+  }
+}
 
-// console.log(quadrado.perimetro(2))
+console.log(quadrado.perimetro(2))
 
 
 let bike = {
