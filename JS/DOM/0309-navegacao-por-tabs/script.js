@@ -1,19 +1,29 @@
-const tabMenu = document.querySelectorAll('.js-tabmenu li');
-const tabContent = document.querySelectorAll('.js-tabcontent section');
+const listaAnimais = document.querySelectorAll('.js-listaAnimais li')
+const listaContent = document.querySelectorAll('.js-listaContent section')
+listaContent[0].classList.add('ativo')
 
-if(tabMenu.length && tabContent.length) {
-  tabContent[0].classList.add('ativo');
+function criaClass(index) {
 
-  function activeTab(index) {
-    tabContent.forEach((section) => {
-      section.classList.remove('ativo');
-    });
-    tabContent[index].classList.add('ativo');
-  }
+  listaContent.forEach((item) => {
+    item.classList.remove('ativo')
+  })
 
-  tabMenu.forEach((itemMenu, index) => {
-    itemMenu.addEventListener('click', () => {
-      activeTab(index);
-    });
-  });
+  listaContent[index].classList.add('ativo')
 }
+
+listaAnimais.forEach((itemMenu, itemIndex) => {
+  itemMenu.addEventListener('click', () => {
+    criaClass(itemIndex)
+  })
+})
+
+function Pessoa(nome, idade) {
+  this.nome = nome;
+  this.idade = idade;
+}
+
+Pessoa.prototype.andar = function() {
+  return `${this.nome} andou`
+}
+
+const well = new Pessoa('Wellington', 19)
